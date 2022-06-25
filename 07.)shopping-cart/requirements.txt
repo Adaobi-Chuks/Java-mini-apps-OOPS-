@@ -1,0 +1,17 @@
+The Shopping Cart lets users add, remove, and check items out.
+They can add an item that wasn't already added.
+The checkout process returns a receipt that holds the subtotal, tax, and total.
+
+               Test Cases
+----------------------------------------
+- adding an item if not already added
+    - Test if cart contains the movie after being added
+    - Test if cart adds an item after it has been added
+- removing an item
+    - Test if store contains removed item
+    - Test for illegal state exception for removing from an empty cart
+- checkout
+    - Test if subtotal equals the sum of each price
+    - Test if tax equals 13% of subtotal
+    - Test if total equals the sum of subtotal and tax
+    - Test for illegal state exception for checking out from an empty cart
